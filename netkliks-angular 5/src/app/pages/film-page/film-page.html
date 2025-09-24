@@ -1,0 +1,51 @@
+<section class="content">
+    <div class="container">
+        <div class="content-box">
+
+
+
+
+            <div class="content-film">
+
+                @if (film) {
+                <div class="content-film_img">
+                    <img [src]="film.image" alt="film">
+                </div>
+                <div class="content-film_info">
+                    <div class="content-film_info-content">
+                        <div class="content-film_info-title">
+                            <h1>{{film.title}},</h1>
+                            <p>{{film.original}}</p>
+                        </div>
+
+                        <p class="content-film_info-description">
+                            {{film.category}}
+                        </p>
+
+                        <p class="content-film_info-rating">
+                            {{film.rating}}
+                        </p>
+
+                        <p class="content-film_info-text"> 
+                            {{film.description}}
+                        </p>
+                        <p class="content-film_info-text">
+                            Очнувшись, Уотни обнаруживает, что связь с Землёй отсутствует, но при этом полностью
+                            функционирует жилой модуль.
+                            Главный герой начинает искать способ продержаться на имеющихся запасах еды,
+                            витаминов,
+                            воды и воздуха ещё 4 года до прилёта следующей миссии «Арес-4».
+                        </p>
+
+                    </div>
+
+                    <div class="content-film_info-controls">
+                        <button>Watch</button>
+                    </div>
+                </div>
+                }
+            </div>
+            <app-sidebar></app-sidebar>
+        </div>
+    </div>
+</section>
